@@ -1,0 +1,15 @@
+<h1>Games#new</h1>
+
+<% @letters.chars.each do |x| %>
+<%= x %>
+<% end %>
+
+
+
+<form action="/score" method="get">
+  <p>What's the longest word you can find</p>
+  <input type="text" name="word">
+  <input type="submit">
+  <input type="hidden" name="grid" value=<%=@letters%> >
+</form>
+
